@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/poem_line_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="鹅鹅鹅，曲项向天歌"
+        android:textColor="#233"
+        android:textSize="23sp"/>
+
+    <TextView
+        android:id="@+id/poem_line_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="白毛浮绿水"
+        android:textColor="#233"
+        android:textSize="23sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryLight"
+        android:layout_marginTop="8dp">
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true" />
+        <View
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@color/colorAccent"
+            android:layout_toEndOf="@+id/view_1"
+            android:layout_toRightOf="@+id/view_1"
+            android:layout_alignBottom="@id/view_1"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
